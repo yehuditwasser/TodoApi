@@ -39,7 +39,7 @@ var app = builder.Build();
     });
 //}
 
-app.UseCors("AllowAll");
+app.UseCors();
 
 app.MapGet("/", () => "hello");
 app.MapGet("/tasks", GetAllTasks);
